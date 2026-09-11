@@ -1,901 +1,3540 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Academic and professional profile of Md. Abdullah Al Mamun — education professional, system leader, trainer and education policy practitioner in Bangladesh.">
+
   <title>Md. Abdullah Al Mamun | Education Leadership & Systems</title>
+
+  <!-- GOOGLE FONTS -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 
   <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================= */
+
     :root{
       --ink:#14213d;
       --ink-2:#263858;
       --muted:#667085;
+
       --paper:#ffffff;
       --bg:#f4f7fb;
-      --line:#e6ebf2;
+
+      --line:#e2e8f0;
+
       --accent:#1f6f8b;
       --accent-2:#2b8a78;
+
       --soft:#eaf5f6;
       --gold:#b58b3a;
-      --shadow:0 18px 50px rgba(20,33,61,.08);
+
+      --shadow:0 20px 55px rgba(20,33,61,.09);
+      --shadow-soft:0 12px 35px rgba(20,33,61,.06);
+
       --radius:24px;
-      --max:1180px;
+
+      --max:1220px;
     }
 
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
     body{
+
       font-family:"DM Sans",Arial,sans-serif;
+
       color:var(--ink);
-      background:var(--bg);
-      line-height:1.75;
+
+      background:
+      radial-gradient(
+        circle at top right,
+        rgba(31,111,139,.05),
+        transparent 30%
+      ),
+      var(--bg);
+
+      line-height:1.8;
+
+      font-size:17px;
+
       -webkit-font-smoothing:antialiased;
-    }
-    a{color:inherit;text-decoration:none}
-    img{display:block;max-width:100%}
-    section{scroll-margin-top:90px}
 
-    /* ---------- NAV ---------- */
+    }
+
+    a{
+      color:inherit;
+      text-decoration:none;
+    }
+
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    section{
+      scroll-margin-top:100px;
+    }
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================= */
+
     .nav-wrap{
+
       position:sticky;
+
       top:0;
+
       z-index:1000;
-      background:rgba(244,247,251,.88);
-      backdrop-filter:blur(16px);
-      border-bottom:1px solid rgba(230,235,242,.8);
+
+      background:rgba(244,247,251,.90);
+
+      backdrop-filter:blur(18px);
+
+      border-bottom:1px solid rgba(226,232,240,.9);
+
     }
+
+
     nav{
+
       max-width:var(--max);
+
       margin:auto;
-      min-height:76px;
-      padding:0 24px;
+
+      min-height:82px;
+
+      padding:0 28px;
+
       display:flex;
+
       align-items:center;
+
       justify-content:space-between;
-      gap:24px;
+
+      gap:30px;
+
     }
+
+
     .brand{
+
       display:flex;
+
       align-items:center;
-      gap:12px;
+
+      gap:14px;
+
       font-weight:700;
+
       letter-spacing:-.02em;
+
     }
+
+
     .brand-mark{
-      width:40px;height:40px;border-radius:12px;
-      display:grid;place-items:center;
-      color:white;background:linear-gradient(135deg,var(--ink),var(--accent));
-      font-size:14px;font-weight:700;
-    }
-    .brand span{font-size:15px}
-    .nav-links{
-      display:flex;align-items:center;gap:5px;
-      list-style:none;
-    }
-    .nav-links a{
-      padding:9px 12px;
-      color:#536176;
-      font-size:13px;font-weight:600;
-      border-radius:10px;
-      transition:.2s ease;
-    }
-    .nav-links a:hover{background:#fff;color:var(--ink)}
 
-    /* ---------- GLOBAL ---------- */
-    .container{max-width:var(--max);margin:auto;padding:0 24px}
-    .section{padding:92px 0}
-    .section-head{max-width:720px;margin-bottom:38px}
-    .eyebrow{
-      display:inline-flex;align-items:center;gap:8px;
-      color:var(--accent);
-      font-size:12px;font-weight:700;
-      letter-spacing:.14em;text-transform:uppercase;
-      margin-bottom:12px;
-    }
-    .eyebrow:before{
-      content:"";
-      width:28px;height:2px;background:var(--gold);
-      border-radius:99px;
-    }
-    h1,h2,h3{line-height:1.2}
-    h1{
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:clamp(43px,6vw,72px);
-      letter-spacing:-.045em;
-    }
-    h2{
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:clamp(30px,4vw,44px);
-      letter-spacing:-.03em;
-    }
-    h3{font-size:18px}
-    .lead{color:var(--muted);font-size:17px;max-width:690px}
+      width:44px;
 
-    /* ---------- HERO ---------- */
-    .hero{padding:58px 0 78px;position:relative;overflow:hidden}
-    .hero:before{
-      content:"";
-      position:absolute;
-      width:520px;height:520px;
-      border-radius:50%;
-      background:radial-gradient(circle,rgba(43,138,120,.13),transparent 67%);
-      top:-210px;right:-110px;pointer-events:none;
-    }
-    .hero-card{
-      position:relative;
-      display:grid;
-      grid-template-columns:1.35fr .65fr;
-      min-height:590px;
-      overflow:hidden;
-      background:var(--paper);
-      border:1px solid var(--line);
-      border-radius:32px;
-      box-shadow:var(--shadow);
-    }
-    .hero-copy{
-      padding:72px 66px 58px;
-      display:flex;flex-direction:column;justify-content:center;
-    }
-    .hero-copy .eyebrow{margin-bottom:18px}
-    .hero-copy h1{max-width:720px}
-    .hero-title{
-      color:var(--accent);
-      font-size:18px;font-weight:700;
-      margin:19px 0 16px;
-    }
-    .hero-copy .lead{font-size:17px;max-width:650px}
-    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-    .btn{
-      display:inline-flex;align-items:center;justify-content:center;
-      min-height:46px;padding:0 18px;
-      border-radius:12px;
-      font-size:13px;font-weight:700;
-      border:1px solid var(--line);
-      transition:.2s ease;
-    }
-    .btn-primary{
-      color:white;background:var(--ink);border-color:var(--ink);
-      box-shadow:0 8px 22px rgba(20,33,61,.16);
-    }
-    .btn-primary:hover{transform:translateY(-2px);background:#0d172b}
-    .btn-light{background:#fff;color:var(--ink)}
-    .btn-light:hover{border-color:#cbd5e1;transform:translateY(-2px)}
-    .hero-photo{
-      position:relative;
-      min-height:590px;
-      background:linear-gradient(145deg,#dceef0,#f0f4f7);
-      display:flex;align-items:flex-end;justify-content:center;
-      overflow:hidden;
-    }
-    .hero-photo:before{
-      content:"";
-      position:absolute;
-      width:420px;height:420px;
-      border-radius:50%;
-      border:1px solid rgba(31,111,139,.14);
-      top:70px;right:-100px;
-    }
-    .hero-photo:after{
-      content:"";
-      position:absolute;
-      width:260px;height:260px;
-      border-radius:50%;
-      background:rgba(181,139,58,.09);
-      left:-100px;bottom:-90px;
-    }
-    .hero-photo img{
-      position:relative;
-      z-index:2;
-      width:82%;
-      height:92%;
-      object-fit:cover;
-      object-position:center top;
-      border-radius:190px 190px 18px 18px;
-      border:9px solid rgba(255,255,255,.75);
-      box-shadow:0 22px 45px rgba(20,33,61,.18);
-    }
-    .photo-note{
-      position:absolute;z-index:3;left:28px;bottom:28px;
-      padding:11px 14px;border-radius:12px;
-      background:rgba(255,255,255,.92);
-      border:1px solid rgba(230,235,242,.9);
-      box-shadow:0 10px 30px rgba(20,33,61,.09);
-      font-size:11px;font-weight:700;color:var(--ink-2);
-    }
+      height:44px;
 
-    /* ---------- STAT STRIP ---------- */
-    .stats{
-      display:grid;grid-template-columns:repeat(4,1fr);
-      gap:14px;margin-top:18px;
-    }
-    .stat{
-      background:#fff;border:1px solid var(--line);
-      border-radius:18px;padding:22px;
-    }
-    .stat strong{
-      display:block;font-family:"Playfair Display",Georgia,serif;
-      font-size:31px;line-height:1;color:var(--accent);
-      margin-bottom:7px;
-    }
-    .stat span{font-size:12px;color:var(--muted);font-weight:600}
-
-    /* ---------- ABOUT / FOCUS ---------- */
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-    .panel{
-      background:#fff;border:1px solid var(--line);
-      border-radius:var(--radius);padding:34px;
-      box-shadow:0 10px 35px rgba(20,33,61,.045);
-    }
-    .panel h3{margin-bottom:15px}
-    .panel p{color:var(--muted);font-size:15px}
-    .focus-grid{
-      display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-top:24px;
-    }
-    .focus{
-      padding:14px 15px;
-      border:1px solid var(--line);
       border-radius:13px;
-      background:#fbfcfd;
-      font-size:13px;font-weight:600;color:var(--ink-2);
+
+      display:grid;
+
+      place-items:center;
+
+      color:white;
+
+      background:
+
+      linear-gradient(
+        135deg,
+        var(--ink),
+        var(--accent)
+      );
+
+      font-size:15px;
+
+      font-weight:700;
+
+      box-shadow:
+      0 8px 20px
+      rgba(20,33,61,.18);
+
     }
 
-    /* ---------- TIMELINE ---------- */
-    .timeline{position:relative}
-    .timeline:before{
-      content:"";position:absolute;left:9px;top:7px;bottom:7px;
-      width:1px;background:#d9e1e8;
-    }
-    .experience{
-      position:relative;padding-left:42px;padding-bottom:38px;
-    }
-    .experience:last-child{padding-bottom:0}
-    .dot{
-      position:absolute;left:3px;top:7px;
-      width:13px;height:13px;border-radius:50%;
-      background:var(--accent);border:3px solid var(--bg);
-      box-shadow:0 0 0 1px #bdd4db;
-    }
-    .experience-card{
-      background:#fff;border:1px solid var(--line);
-      border-radius:20px;padding:27px 29px;
-      transition:.2s ease;
-    }
-    .experience-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(20,33,61,.06)}
-    .role-line{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
-    .role{font-size:19px;font-weight:700;color:var(--ink)}
-    .org{color:var(--accent);font-size:13px;font-weight:700;margin-top:3px}
-    .date{
-      flex:none;color:var(--muted);font-size:12px;font-weight:700;
-      padding:6px 10px;background:#f3f6f8;border-radius:8px;
-    }
-    .experience-card p{color:var(--muted);font-size:14px;margin-top:13px}
-    .impact-list{
-      margin:15px 0 0 17px;
-      color:#526074;font-size:13.5px;
-    }
-    .impact-list li{margin:6px 0}
 
-    /* ---------- LEADERSHIP ---------- */
-    .leadership-grid{
-      display:grid;grid-template-columns:repeat(2,1fr);gap:16px;
+    .brand span{
+
+      font-size:17px;
+
     }
-    .lead-card{
-      padding:28px;
-      background:#fff;border:1px solid var(--line);
-      border-radius:20px;
-      position:relative;overflow:hidden;
+
+
+    .nav-links{
+
+      display:flex;
+
+      align-items:center;
+
+      gap:6px;
+
+      list-style:none;
+
     }
-    .lead-card:after{
+
+
+    .nav-links a{
+
+      padding:10px 14px;
+
+      color:#536176;
+
+      font-size:14px;
+
+      font-weight:600;
+
+      border-radius:10px;
+
+      transition:.25s ease;
+
+    }
+
+
+    .nav-links a:hover{
+
+      background:#fff;
+
+      color:var(--ink);
+
+      box-shadow:
+      0 5px 18px
+      rgba(20,33,61,.06);
+
+    }
+
+
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    .container{
+
+      max-width:var(--max);
+
+      margin:auto;
+
+      padding:0 28px;
+
+    }
+
+
+    .section{
+
+      padding:105px 0;
+
+    }
+
+
+    .section-head{
+
+      max-width:780px;
+
+      margin-bottom:45px;
+
+    }
+
+
+    .eyebrow{
+
+      display:inline-flex;
+
+      align-items:center;
+
+      gap:10px;
+
+      color:var(--accent);
+
+      font-size:13px;
+
+      font-weight:700;
+
+      letter-spacing:.15em;
+
+      text-transform:uppercase;
+
+      margin-bottom:15px;
+
+    }
+
+
+    .eyebrow:before{
+
       content:"";
-      position:absolute;right:-25px;bottom:-35px;
-      width:110px;height:110px;border-radius:50%;
-      background:var(--soft);
-    }
-    .lead-number{
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:38px;color:var(--accent);
-      line-height:1;margin-bottom:13px;
-    }
-    .lead-card h3{position:relative;z-index:2}
-    .lead-card p{position:relative;z-index:2;color:var(--muted);font-size:13.5px;margin-top:8px}
 
-    /* ---------- EDUCATION ---------- */
-    .education-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-    .degree{
-      background:#fff;border:1px solid var(--line);
-      border-radius:18px;padding:24px;
-    }
-    .degree .year{font-size:11px;font-weight:800;color:var(--gold);letter-spacing:.12em}
-    .degree h3{margin:8px 0 5px}
-    .degree p{font-size:13px;color:var(--muted)}
-    .honor{
-      display:inline-block;margin-top:12px;
-      padding:5px 9px;border-radius:8px;
-      background:var(--soft);color:var(--accent);
-      font-size:11px;font-weight:700;
+      width:32px;
+
+      height:2px;
+
+      background:var(--gold);
+
+      border-radius:99px;
+
     }
 
-    /* ---------- INTERNATIONAL / DEVELOPMENT ---------- */
-    .experience-list{
-      display:grid;grid-template-columns:1fr 1fr;gap:14px;
-    }
-    .mini-card{
-      background:#fff;border:1px solid var(--line);
-      border-radius:17px;padding:21px;
-    }
-    .mini-card strong{display:block;font-size:14px;color:var(--ink-2)}
-    .mini-card span{font-size:12.5px;color:var(--muted)}
 
-    /* ---------- INTERESTS ---------- */
-    .interest-wrap{
-      background:linear-gradient(135deg,#12233f,#1f5266);
-      border-radius:28px;padding:45px;
-      color:#fff;position:relative;overflow:hidden;
-    }
-    .interest-wrap:before{
-      content:"";position:absolute;right:-80px;top:-130px;
-      width:380px;height:380px;border-radius:50%;
-      border:1px solid rgba(255,255,255,.12);
-    }
-    .interest-wrap h2{position:relative}
-    .interest-wrap .lead{position:relative;color:rgba(255,255,255,.7);margin-top:12px}
-    .interest-tags{
-      position:relative;display:flex;flex-wrap:wrap;gap:9px;margin-top:25px;
-    }
-    .tag{
-      padding:9px 13px;border:1px solid rgba(255,255,255,.17);
-      border-radius:999px;background:rgba(255,255,255,.07);
-      font-size:12px;font-weight:600;
+    h1,h2,h3{
+
+      line-height:1.22;
+
     }
 
-    /* ---------- CONTACT ---------- */
-    .contact{
-      display:grid;grid-template-columns:1fr .8fr;gap:20px;align-items:stretch;
-    }
-    .contact-card{
-      background:#fff;border:1px solid var(--line);
-      border-radius:24px;padding:35px;
-    }
-    .contact-list{list-style:none;margin-top:22px}
-    .contact-list li{
-      display:flex;gap:14px;align-items:flex-start;
-      padding:13px 0;border-bottom:1px solid #edf0f4;
-    }
-    .contact-list li:last-child{border-bottom:0}
-    .contact-icon{
-      width:34px;height:34px;border-radius:10px;
-      display:grid;place-items:center;background:var(--soft);
-      color:var(--accent);font-weight:800;font-size:13px;flex:none;
-    }
-    .contact-list strong{display:block;font-size:12px;color:var(--muted);font-weight:600}
-    .contact-list span,.contact-list a{font-size:13px;font-weight:600;color:var(--ink-2)}
-    .quote{
-      display:flex;align-items:center;
-      background:linear-gradient(145deg,#eaf5f6,#f9f8f3);
-      border:1px solid #dce9e9;
-      border-radius:24px;padding:38px;
-    }
-    .quote p{
-      font-family:"Playfair Display",Georgia,serif;
-      font-size:25px;line-height:1.5;color:var(--ink);
+
+    h1{
+
+      font-family:
+      "Playfair Display",
+      Georgia,
+      serif;
+
+      font-size:
+      clamp(
+        52px,
+        6vw,
+        80px
+      );
+
+      letter-spacing:-.045em;
+
     }
 
-    /* ---------- FOOTER ---------- */
-    footer{
-      margin-top:30px;
-      padding:35px 0;
-      border-top:1px solid var(--line);
+
+    h2{
+
+      font-family:
+      "Playfair Display",
+      Georgia,
+      serif;
+
+      font-size:
+      clamp(
+        36px,
+        4vw,
+        50px
+      );
+
+      letter-spacing:-.03em;
+
+    }
+
+
+    h3{
+
+      font-size:21px;
+
+    }
+
+
+    .lead{
+
       color:var(--muted);
-      font-size:12px;
-    }
-    .footer-inner{
-      max-width:var(--max);margin:auto;padding:0 24px;
-      display:flex;justify-content:space-between;gap:20px;
+
+      font-size:18px;
+
+      max-width:720px;
+
+      line-height:1.85;
+
     }
 
-    /* ---------- RESPONSIVE ---------- */
-    @media(max-width:900px){
-      .nav-links{display:none}
-      .hero-card,.split,.contact{grid-template-columns:1fr}
-      .hero-copy{padding:52px 38px}
-      .hero-photo{min-height:470px}
-      .stats{grid-template-columns:repeat(2,1fr)}
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero{
+
+      padding:65px 0 82px;
+
+      position:relative;
+
+      overflow:hidden;
+
     }
-    @media(max-width:650px){
-      .section{padding:66px 0}
-      .hero{padding-top:28px}
-      .container{padding:0 16px}
-      nav{padding:0 16px}
-      .brand span{font-size:13px}
-      .hero-card{border-radius:22px}
-      .hero-copy{padding:42px 25px}
-      .hero-photo{min-height:390px}
-      .hero-photo img{height:88%;width:78%}
-      .stats,.education-grid,.experience-list,.leadership-grid{grid-template-columns:1fr}
-      .focus-grid{grid-template-columns:1fr}
-      .panel,.experience-card,.contact-card{padding:25px}
-      .role-line{display:block}
-      .date{display:inline-block;margin-top:10px}
-      .interest-wrap{padding:30px 25px;border-radius:22px}
-      .quote p{font-size:21px}
-      .footer-inner{display:block}
-      .footer-inner div+div{margin-top:8px}
+
+
+    .hero:before{
+
+      content:"";
+
+      position:absolute;
+
+      width:560px;
+
+      height:560px;
+
+      border-radius:50%;
+
+      background:
+
+      radial-gradient(
+        circle,
+        rgba(43,138,120,.14),
+        transparent 68%
+      );
+
+      top:-220px;
+
+      right:-120px;
+
+      pointer-events:none;
+
     }
+
+
+    .hero-card{
+
+      position:relative;
+
+      display:grid;
+
+      grid-template-columns:
+      1.35fr
+      .65fr;
+
+      min-height:620px;
+
+      overflow:hidden;
+
+      background:var(--paper);
+
+      border:1px solid var(--line);
+
+      border-radius:34px;
+
+      box-shadow:var(--shadow);
+
+    }
+
+
+    .hero-copy{
+
+      padding:
+      78px
+      70px
+      64px;
+
+      display:flex;
+
+      flex-direction:column;
+
+      justify-content:center;
+
+    }
+
+
+    .hero-copy .eyebrow{
+
+      margin-bottom:20px;
+
+    }
+
+
+    .hero-copy h1{
+
+      max-width:720px;
+
+    }
+
+
+    .hero-title{
+
+      color:var(--accent);
+
+      font-size:20px;
+
+      font-weight:700;
+
+      margin:
+      22px
+      0
+      18px;
+
+    }
+
+
+    .hero-copy .lead{
+
+      font-size:18px;
+
+      max-width:680px;
+
+    }
+
+
+    .hero-actions{
+
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:14px;
+
+      margin-top:34px;
+
+    }
+
+
+    .btn{
+
+      display:inline-flex;
+
+      align-items:center;
+
+      justify-content:center;
+
+      min-height:50px;
+
+      padding:
+      0
+      21px;
+
+      border-radius:13px;
+
+      font-size:14px;
+
+      font-weight:700;
+
+      border:1px solid var(--line);
+
+      transition:.25s ease;
+
+    }
+
+
+    .btn-primary{
+
+      color:white;
+
+      background:var(--ink);
+
+      border-color:var(--ink);
+
+      box-shadow:
+      0 10px 25px
+      rgba(20,33,61,.16);
+
+    }
+
+
+    .btn-primary:hover{
+
+      transform:
+      translateY(-3px);
+
+      background:#0d172b;
+
+    }
+
+
+    .btn-light{
+
+      background:#fff;
+
+      color:var(--ink);
+
+    }
+
+
+    .btn-light:hover{
+
+      border-color:#cbd5e1;
+
+      transform:
+      translateY(-3px);
+
+      box-shadow:
+      0 8px 20px
+      rgba(20,33,61,.06);
+
+    }
+
+
+
+    /* =========================================================
+       HERO PHOTO
+    ========================================================= */
+
+    .hero-photo{
+
+      position:relative;
+
+      min-height:620px;
+
+      background:
+
+      linear-gradient(
+        145deg,
+        #dceef0,
+        #f2f5f8
+      );
+
+      display:flex;
+
+      align-items:flex-end;
+
+      justify-content:center;
+
+      overflow:hidden;
+
+    }
+
+
+    .hero-photo:before{
+
+      content:"";
+
+      position:absolute;
+
+      width:430px;
+
+      height:430px;
+
+      border-radius:50%;
+
+      border:
+      1px solid
+      rgba(31,111,139,.16);
+
+      top:60px;
+
+      right:-110px;
+
+    }
+
+
+    .hero-photo:after{
+
+      content:"";
+
+      position:absolute;
+
+      width:280px;
+
+      height:280px;
+
+      border-radius:50%;
+
+      background:
+      rgba(181,139,58,.10);
+
+      left:-110px;
+
+      bottom:-90px;
+
+    }
+
+
+    .hero-photo img{
+
+      position:relative;
+
+      z-index:2;
+
+      width:82%;
+
+      height:92%;
+
+      object-fit:cover;
+
+      object-position:center top;
+
+      border-radius:
+
+      200px
+      200px
+      20px
+      20px;
+
+      border:
+      9px solid
+      rgba(255,255,255,.78);
+
+      box-shadow:
+
+      0
+      25px
+      50px
+      rgba(20,33,61,.20);
+
+    }
+
+
+    .photo-note{
+
+      position:absolute;
+
+      z-index:3;
+
+      left:30px;
+
+      bottom:30px;
+
+      padding:
+
+      12px
+      16px;
+
+      border-radius:12px;
+
+      background:
+      rgba(255,255,255,.94);
+
+      border:
+      1px solid
+      rgba(226,232,240,.9);
+
+      box-shadow:
+
+      0
+      10px
+      30px
+      rgba(20,33,61,.09);
+
+      font-size:12px;
+
+      font-weight:700;
+
+      color:var(--ink-2);
+
+    }
+
+
+
+    /* =========================================================
+       STATISTICS
+    ========================================================= */
+
+    .stats{
+
+      display:grid;
+
+      grid-template-columns:
+      repeat(4,1fr);
+
+      gap:16px;
+
+      margin-top:22px;
+
+    }
+
+
+    .stat{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:19px;
+
+      padding:25px;
+
+      transition:.25s ease;
+
+    }
+
+
+    .stat:hover{
+
+      transform:
+      translateY(-3px);
+
+      box-shadow:
+      var(--shadow-soft);
+
+    }
+
+
+    .stat strong{
+
+      display:block;
+
+      font-family:
+      "Playfair Display",
+      Georgia,
+      serif;
+
+      font-size:35px;
+
+      line-height:1;
+
+      color:var(--accent);
+
+      margin-bottom:9px;
+
+    }
+
+
+    .stat span{
+
+      font-size:14px;
+
+      color:var(--muted);
+
+      font-weight:600;
+
+      line-height:1.55;
+
+      display:block;
+
+    }
+
+
+
+    /* =========================================================
+       PROFILE
+    ========================================================= */
+
+    .split{
+
+      display:grid;
+
+      grid-template-columns:
+      1fr
+      1fr;
+
+      gap:24px;
+
+    }
+
+
+    .panel{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:
+      var(--radius);
+
+      padding:38px;
+
+      box-shadow:
+      0
+      10px
+      35px
+      rgba(20,33,61,.045);
+
+    }
+
+
+    .panel h3{
+
+      margin-bottom:18px;
+
+    }
+
+
+    .panel p{
+
+      color:var(--muted);
+
+      font-size:16px;
+
+      line-height:1.85;
+
+    }
+
+
+    .focus-grid{
+
+      display:grid;
+
+      grid-template-columns:
+      1fr
+      1fr;
+
+      gap:12px;
+
+      margin-top:26px;
+
+    }
+
+
+    .focus{
+
+      padding:
+
+      16px
+      17px;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:14px;
+
+      background:#fbfcfd;
+
+      font-size:14px;
+
+      font-weight:600;
+
+      color:var(--ink-2);
+
+      line-height:1.55;
+
+      transition:.2s ease;
+
+    }
+
+
+    .focus:hover{
+
+      background:var(--soft);
+
+      transform:
+      translateY(-2px);
+
+    }
+
+
+
+    /* =========================================================
+       EXPERIENCE TIMELINE
+    ========================================================= */
+
+    .timeline{
+
+      position:relative;
+
+    }
+
+
+    .timeline:before{
+
+      content:"";
+
+      position:absolute;
+
+      left:10px;
+
+      top:8px;
+
+      bottom:8px;
+
+      width:2px;
+
+      background:#d5dfe8;
+
+    }
+
+
+    .experience{
+
+      position:relative;
+
+      padding-left:46px;
+
+      padding-bottom:42px;
+
+    }
+
+
+    .experience:last-child{
+
+      padding-bottom:0;
+
+    }
+
+
+    .dot{
+
+      position:absolute;
+
+      left:3px;
+
+      top:9px;
+
+      width:15px;
+
+      height:15px;
+
+      border-radius:50%;
+
+      background:var(--accent);
+
+      border:
+      3px solid
+      #eef3f7;
+
+      box-shadow:
+
+      0
+      0
+      0
+      1px
+      #bdd4db;
+
+    }
+
+
+    .experience-card{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:22px;
+
+      padding:
+
+      31px
+      33px;
+
+      transition:.25s ease;
+
+    }
+
+
+    .experience-card:hover{
+
+      transform:
+      translateY(-3px);
+
+      box-shadow:
+      0
+      15px
+      35px
+      rgba(20,33,61,.07);
+
+    }
+
+
+    .role-line{
+
+      display:flex;
+
+      align-items:flex-start;
+
+      justify-content:space-between;
+
+      gap:22px;
+
+    }
+
+
+    .role{
+
+      font-size:21px;
+
+      font-weight:700;
+
+      color:var(--ink);
+
+      line-height:1.4;
+
+    }
+
+
+    .org{
+
+      color:var(--accent);
+
+      font-size:14px;
+
+      font-weight:700;
+
+      margin-top:5px;
+
+    }
+
+
+    .date{
+
+      flex:none;
+
+      color:var(--muted);
+
+      font-size:13px;
+
+      font-weight:700;
+
+      padding:
+
+      7px
+      11px;
+
+      background:#f3f6f8;
+
+      border-radius:9px;
+
+    }
+
+
+    .experience-card p{
+
+      color:var(--muted);
+
+      font-size:15px;
+
+      margin-top:15px;
+
+      line-height:1.8;
+
+    }
+
+
+    .impact-list{
+
+      margin:
+
+      17px
+      0
+      0
+      19px;
+
+      color:#526074;
+
+      font-size:14.5px;
+
+      line-height:1.75;
+
+    }
+
+
+    .impact-list li{
+
+      margin:7px 0;
+
+    }
+
+
+
+    /* =========================================================
+       LEADERSHIP
+    ========================================================= */
+
+    .leadership-grid{
+
+      display:grid;
+
+      grid-template-columns:
+      repeat(2,1fr);
+
+      gap:18px;
+
+    }
+
+
+    .lead-card{
+
+      padding:32px;
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:22px;
+
+      position:relative;
+
+      overflow:hidden;
+
+      transition:.25s ease;
+
+    }
+
+
+    .lead-card:hover{
+
+      transform:
+      translateY(-4px);
+
+      box-shadow:
+      var(--shadow-soft);
+
+    }
+
+
+    .lead-card:after{
+
+      content:"";
+
+      position:absolute;
+
+      right:-30px;
+
+      bottom:-40px;
+
+      width:125px;
+
+      height:125px;
+
+      border-radius:50%;
+
+      background:var(--soft);
+
+    }
+
+
+    .lead-number{
+
+      font-family:
+      "Playfair Display",
+      Georgia,
+      serif;
+
+      font-size:43px;
+
+      color:var(--accent);
+
+      line-height:1;
+
+      margin-bottom:15px;
+
+    }
+
+
+    .lead-card h3{
+
+      position:relative;
+
+      z-index:2;
+
+      font-size:21px;
+
+    }
+
+
+    .lead-card p{
+
+      position:relative;
+
+      z-index:2;
+
+      color:var(--muted);
+
+      font-size:15px;
+
+      margin-top:10px;
+
+      line-height:1.75;
+
+    }
+
+
+
+    /* =========================================================
+       EDUCATION
+    ========================================================= */
+
+    .education-grid{
+
+      display:grid;
+
+      grid-template-columns:
+      1fr
+      1fr;
+
+      gap:18px;
+
+    }
+
+
+    .degree{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:20px;
+
+      padding:28px;
+
+      transition:.25s ease;
+
+    }
+
+
+    .degree:hover{
+
+      transform:
+      translateY(-3px);
+
+      box-shadow:
+      var(--shadow-soft);
+
+    }
+
+
+    .degree .year{
+
+      font-size:12px;
+
+      font-weight:800;
+
+      color:var(--gold);
+
+      letter-spacing:.13em;
+
+    }
+
+
+    .degree h3{
+
+      margin:
+
+      10px
+      0
+      7px;
+
+      font-size:20px;
+
+    }
+
+
+    .degree p{
+
+      font-size:15px;
+
+      color:var(--muted);
+
+    }
+
+
+    .honor{
+
+      display:inline-block;
+
+      margin-top:14px;
+
+      padding:
+
+      6px
+      10px;
+
+      border-radius:8px;
+
+      background:var(--soft);
+
+      color:var(--accent);
+
+      font-size:12px;
+
+      font-weight:700;
+
+    }
+
+
+
+    /* =========================================================
+       INTERNATIONAL EXPERIENCE
+    ========================================================= */
+
+    .experience-list{
+
+      display:grid;
+
+      grid-template-columns:
+      1fr
+      1fr;
+
+      gap:16px;
+
+    }
+
+
+    .mini-card{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:18px;
+
+      padding:24px;
+
+      transition:.25s ease;
+
+    }
+
+
+    .mini-card:hover{
+
+      transform:
+      translateY(-3px);
+
+      box-shadow:
+      var(--shadow-soft);
+
+    }
+
+
+    .mini-card strong{
+
+      display:block;
+
+      font-size:16px;
+
+      color:var(--ink-2);
+
+      margin-bottom:5px;
+
+    }
+
+
+    .mini-card span{
+
+      font-size:14px;
+
+      color:var(--muted);
+
+      line-height:1.65;
+
+    }
+
+
+
+    /* =========================================================
+       INTERESTS
+    ========================================================= */
+
+    .interest-wrap{
+
+      background:
+
+      linear-gradient(
+        135deg,
+        #12233f,
+        #1f5266
+      );
+
+      border-radius:30px;
+
+      padding:52px;
+
+      color:#fff;
+
+      position:relative;
+
+      overflow:hidden;
+
+      box-shadow:
+      0
+      20px
+      50px
+      rgba(20,33,61,.15);
+
+    }
+
+
+    .interest-wrap:before{
+
+      content:"";
+
+      position:absolute;
+
+      right:-80px;
+
+      top:-130px;
+
+      width:400px;
+
+      height:400px;
+
+      border-radius:50%;
+
+      border:
+      1px solid
+      rgba(255,255,255,.12);
+
+    }
+
+
+    .interest-wrap h2{
+
+      position:relative;
+
+    }
+
+
+    .interest-wrap .lead{
+
+      position:relative;
+
+      color:
+      rgba(255,255,255,.75);
+
+      margin-top:15px;
+
+      font-size:18px;
+
+    }
+
+
+    .interest-tags{
+
+      position:relative;
+
+      display:flex;
+
+      flex-wrap:wrap;
+
+      gap:10px;
+
+      margin-top:28px;
+
+    }
+
+
+    .tag{
+
+      padding:
+
+      10px
+      15px;
+
+      border:
+      1px solid
+      rgba(255,255,255,.18);
+
+      border-radius:999px;
+
+      background:
+      rgba(255,255,255,.07);
+
+      font-size:13px;
+
+      font-weight:600;
+
+    }
+
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact{
+
+      display:grid;
+
+      grid-template-columns:
+      1fr
+      .8fr;
+
+      gap:22px;
+
+      align-items:stretch;
+
+    }
+
+
+    .contact-card{
+
+      background:#fff;
+
+      border:
+      1px solid
+      var(--line);
+
+      border-radius:26px;
+
+      padding:40px;
+
+      box-shadow:
+      var(--shadow-soft);
+
+    }
+
+
+    .contact-list{
+
+      list-style:none;
+
+      margin-top:25px;
+
+    }
+
+
+    .contact-list li{
+
+      display:flex;
+
+      gap:16px;
+
+      align-items:flex-start;
+
+      padding:
+
+      16px
+      0;
+
+      border-bottom:
+      1px solid
+      #edf0f4;
+
+    }
+
+
+    .contact-list li:last-child{
+
+      border-bottom:0;
+
+    }
+
+
+    .contact-icon{
+
+      width:38px;
+
+      height:38px;
+
+      border-radius:11px;
+
+      display:grid;
+
+      place-items:center;
+
+      background:var(--soft);
+
+      color:var(--accent);
+
+      font-weight:800;
+
+      font-size:14px;
+
+      flex:none;
+
+    }
+
+
+    .contact-list strong{
+
+      display:block;
+
+      font-size:13px;
+
+      color:var(--muted);
+
+      font-weight:600;
+
+    }
+
+
+    .contact-list span,
+
+    .contact-list a{
+
+      font-size:15px;
+
+      font-weight:600;
+
+      color:var(--ink-2);
+
+      line-height:1.6;
+
+    }
+
+
+    .quote{
+
+      display:flex;
+
+      align-items:center;
+
+      background:
+
+      linear-gradient(
+        145deg,
+        #eaf5f6,
+        #f9f8f3
+      );
+
+      border:
+      1px solid
+      #dce9e9;
+
+      border-radius:26px;
+
+      padding:42px;
+
+    }
+
+
+    .quote p{
+
+      font-family:
+      "Playfair Display",
+      Georgia,
+      serif;
+
+      font-size:29px;
+
+      line-height:1.55;
+
+      color:var(--ink);
+
+    }
+
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer{
+
+      margin-top:35px;
+
+      padding:38px 0;
+
+      border-top:
+      1px solid
+      var(--line);
+
+      color:var(--muted);
+
+      font-size:13px;
+
+    }
+
+
+    .footer-inner{
+
+      max-width:var(--max);
+
+      margin:auto;
+
+      padding:
+      0
+      28px;
+
+      display:flex;
+
+      justify-content:space-between;
+
+      gap:20px;
+
+    }
+
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media(max-width:950px){
+
+      .nav-links{
+        display:none;
+      }
+
+      .hero-card,
+      .split,
+      .contact{
+        grid-template-columns:1fr;
+      }
+
+      .hero-copy{
+        padding:
+        60px
+        48px;
+      }
+
+      .hero-photo{
+        min-height:520px;
+      }
+
+      .stats{
+        grid-template-columns:
+        repeat(2,1fr);
+      }
+
+    }
+
+
+
+    @media(max-width:700px){
+
+      body{
+        font-size:16px;
+      }
+
+      .section{
+        padding:75px 0;
+      }
+
+      .hero{
+        padding-top:32px;
+      }
+
+      .container{
+        padding:0 17px;
+      }
+
+      nav{
+        padding:0 17px;
+      }
+
+      .brand span{
+        font-size:14px;
+      }
+
+      .hero-card{
+        border-radius:24px;
+      }
+
+      .hero-copy{
+
+        padding:
+
+        48px
+        27px;
+
+      }
+
+      .hero-photo{
+        min-height:420px;
+      }
+
+      .hero-photo img{
+        height:88%;
+        width:78%;
+      }
+
+      .stats,
+      .education-grid,
+      .experience-list,
+      .leadership-grid{
+
+        grid-template-columns:1fr;
+
+      }
+
+      .focus-grid{
+        grid-template-columns:1fr;
+      }
+
+      .panel,
+      .experience-card,
+      .contact-card{
+        padding:27px;
+      }
+
+      .role-line{
+        display:block;
+      }
+
+      .date{
+
+        display:inline-block;
+
+        margin-top:12px;
+
+      }
+
+      .interest-wrap{
+
+        padding:
+
+        35px
+        27px;
+
+        border-radius:24px;
+
+      }
+
+      .quote p{
+        font-size:23px;
+      }
+
+      .footer-inner{
+        display:block;
+      }
+
+      .footer-inner div+div{
+        margin-top:9px;
+      }
+
+    }
+
+
+    @media(max-width:450px){
+
+      h1{
+        font-size:46px;
+      }
+
+      h2{
+        font-size:34px;
+      }
+
+      .stats{
+        grid-template-columns:1fr;
+      }
+
+    }
+
   </style>
+
 </head>
 
 <body>
 
-  <header class="nav-wrap">
-    <nav>
-      <a class="brand" href="#home" aria-label="Md. Abdullah Al Mamun home">
-        <span class="brand-mark">AM</span>
-        <span>Md. Abdullah Al Mamun</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="#about">Profile</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#international">Global</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
-  <main>
+<header class="nav-wrap">
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-card">
+  <nav>
 
-          <div class="hero-copy">
-            <div class="eyebrow">Education Leadership · Systems · Learning</div>
-            <h1>Md. Abdullah<br>Al Mamun</h1>
-            <div class="hero-title">Education Officer &amp; Private Secretary to the Director General</div>
+```
+<a
+  class="brand"
+  href="#home"
+  aria-label="Md. Abdullah Al Mamun home"
+>
 
-            <p class="lead">
-              Education professional and system leader with 20+ years of experience
-              across Bangladesh's government primary education system — from frontline
-              school administration to district leadership, national professional
-              development and senior-level strategic coordination.
-            </p>
+  <span class="brand-mark">
+    AM
+  </span>
 
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="#experience">Explore Experience</a>
-              <a class="btn btn-light" href="#contact">Get in Touch</a>
-            </div>
-          </div>
+  <span>
+    Md. Abdullah Al Mamun
+  </span>
 
-          <div class="hero-photo">
-            <!--
-              PHOTO:
-              Put your photograph in the same folder as this HTML file and name it "mamun.jpg".
-              For your current Windows computer, you can temporarily use:
-              file:///C:/Users/mahmu/OneDrive/Desktop/YOUR-IMAGE-FILENAME.jpg
-              Replace the src below with the exact image filename/path.
-            -->
-            <img src="mamun.jpg"
-                 alt="Portrait of Md. Abdullah Al Mamun"
-                 onerror="this.src='https://placehold.co/700x900/eaf5f6/14213d?text=Add+Profile+Photo';">
-            <div class="photo-note">Education · Leadership · Public Systems</div>
-          </div>
+</a>
 
-        </div>
 
-        <div class="stats">
-          <div class="stat"><strong>20+</strong><span>Years in education systems</span></div>
-          <div class="stat"><strong>5,500</strong><span>Teachers supported during COVID-19 response</span></div>
-          <div class="stat"><strong>600+</strong><span>School inspections conducted</span></div>
-          <div class="stat"><strong>150</strong><span>Officers trained as Master Trainers / Trainers</span></div>
-        </div>
-      </div>
-    </section>
+<ul class="nav-links">
 
-    <!-- PROFILE -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">Professional Profile</div>
-          <h2>Building stronger education systems through people, practice and leadership.</h2>
-        </div>
+  <li>
+    <a href="#about">
+      Profile
+    </a>
+  </li>
 
-        <div class="split">
-          <article class="panel">
-            <h3>From classroom realities to system leadership</h3>
-            <p>
-              Currently serving as Education Officer and Private Secretary to the
-              Director General of the Directorate of Primary Education, providing
-              professional, strategic and technical support across policy,
-              administration, academic programmes, teacher development, school
-              improvement, stakeholder engagement and system management.
-            </p>
-            <p style="margin-top:14px">
-              His experience spans school-level implementation, sub-district and
-              district administration, national professional development and
-              senior strategic coordination — offering a cross-level perspective
-              on how public education systems function.
-            </p>
-          </article>
+  <li>
+    <a href="#experience">
+      Experience
+    </a>
+  </li>
 
-          <article class="panel">
-            <h3>Core Leadership Expertise</h3>
-            <div class="focus-grid">
-              <div class="focus">Education System Leadership &amp; Transformation</div>
-              <div class="focus">Educational Leadership &amp; School Improvement</div>
-              <div class="focus">Teacher &amp; Head-Teacher Development</div>
-              <div class="focus">Training &amp; Manual Development</div>
-              <div class="focus">Master Trainer Development</div>
-              <div class="focus">Curriculum, Pedagogy &amp; Learning</div>
-              <div class="focus">Inclusive &amp; Equitable Education</div>
-              <div class="focus">Education Planning &amp; Management</div>
-              <div class="focus">Monitoring &amp; Evaluation</div>
-              <div class="focus">Government &amp; Partner Coordination</div>
-              <div class="focus">Educational Innovation &amp; Digital Learning</div>
-              <div class="focus">Facilitation &amp; Knowledge Sharing</div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+  <li>
+    <a href="#leadership">
+      Leadership
+    </a>
+  </li>
 
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience" style="background:#eef3f7">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">Professional Experience</div>
-          <h2>Two decades across the education system.</h2>
-          <p class="lead" style="margin-top:12px">
-            A career progressing from frontline educational administration to
-            district leadership, national training and senior-level coordination.
-          </p>
-        </div>
+  <li>
+    <a href="#education">
+      Education
+    </a>
+  </li>
 
-        <div class="timeline">
+  <li>
+    <a href="#international">
+      Global
+    </a>
+  </li>
 
-          <div class="experience">
-            <span class="dot"></span>
-            <article class="experience-card">
-              <div class="role-line">
-                <div>
-                  <div class="role">Education Officer &amp; Private Secretary to the Director General</div>
-                  <div class="org">Directorate of Primary Education · Ministry of Primary and Mass Education</div>
-                </div>
-                <span class="date">Feb 2025 – Present</span>
-              </div>
-              <p>Dhaka, Bangladesh · Professional, strategic and technical support to senior leadership.</p>
-              <ul class="impact-list">
-                <li>Prepare briefing notes, speeches, presentations, concept notes, reports and strategic communications.</li>
-                <li>Support academic programmes, teacher development, school improvement, education management and implementation priorities.</li>
-                <li>Coordinate with senior government officials, field leadership, development partners and international organisations.</li>
-                <li>Participate in field and school visits, monitoring activities and follow-up on implementation issues.</li>
-              </ul>
-            </article>
-          </div>
+  <li>
+    <a href="#contact">
+      Contact
+    </a>
+  </li>
 
-          <div class="experience">
-            <span class="dot"></span>
-            <article class="experience-card">
-              <div class="role-line">
-                <div>
-                  <div class="role">Education Officer — Training Division</div>
-                  <div class="org">Directorate of Primary Education</div>
-                </div>
-                <span class="date">Apr 2022 – Feb 2025</span>
-              </div>
-              <p>National teacher and education-officer professional development, leadership development, training design and facilitation.</p>
-              <ul class="impact-list">
-                <li>Member of a six-person design and development team for the Head Teacher Leadership Development Programme.</li>
-                <li>Co-developed a 14-day Head Teacher's Leadership Training Manual comprising 56 structured sessions.</li>
-                <li>Trained 150 selected officers across Bangladesh as Master Trainers / Trainers.</li>
-                <li>Supported a cascade model for scaling leadership capacity among head teachers.</li>
-              </ul>
-            </article>
-          </div>
+</ul>
+```
 
-          <div class="experience">
-            <span class="dot"></span>
-            <article class="experience-card">
-              <div class="role-line">
-                <div>
-                  <div class="role">Assistant District Primary Education Officer</div>
-                  <div class="org">Government Primary Education · Bangladesh</div>
-                </div>
-                <span class="date">Mar 2019 – Apr 2022</span>
-              </div>
-              <p>Educational, administrative and leadership support across a large district primary education system.</p>
-              <ul class="impact-list">
-                <li>Supported a system comprising approximately 1,159 schools, 6,941 teachers and 165,000 students.</li>
-                <li>Led and mentored Upazila and Assistant Upazila Education Officers.</li>
-                <li>Supported classroom observation, teacher development, school inspection and instructional improvement.</li>
-                <li>Worked with schools and field officials to strengthen School Learning Improvement Plans and local education management.</li>
-              </ul>
-            </article>
-          </div>
+  </nav>
 
-          <div class="experience">
-            <span class="dot"></span>
-            <article class="experience-card">
-              <div class="role-line">
-                <div>
-                  <div class="role">Upazila Education Officer</div>
-                  <div class="org">Government Primary Education · Bangladesh</div>
-                </div>
-                <span class="date">Jan 2005 – Feb 2019</span>
-              </div>
-              <p>Chief education administrator and academic leader at sub-district level across multiple postings.</p>
-              <ul class="impact-list">
-                <li>Led administration, school supervision, teacher support and programme implementation.</li>
-                <li>Conducted 600+ school inspections and observed 800+ classroom lessons.</li>
-                <li>Organised 50+ teacher training programmes and supported 500+ sub-cluster training sessions.</li>
-                <li>Supervised professional learning involving approximately 2,500 teachers.</li>
-                <li>Chaired or facilitated 110+ Primary Education Development and Coordination Meetings.</li>
-                <li>Supported improvements in enrolment, attendance and retention; in relevant postings, dropout fell from approximately 25% to below 5%.</li>
-              </ul>
-            </article>
-          </div>
+</header>
 
-        </div>
-      </div>
-    </section>
+<main>
 
-    <!-- LEADERSHIP -->
-    <section class="section" id="leadership">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">Selected System-Level Contributions</div>
-          <h2>Leadership that connects policy, practice and people.</h2>
-        </div>
+<!-- =========================================================
+     HERO
+========================================================= -->
 
-        <div class="leadership-grid">
-          <article class="lead-card">
-            <div class="lead-number">01</div>
-            <h3>Building Leadership Capacity at Scale</h3>
-            <p>
-              Designed and delivered leadership development for head teachers and
-              education officers, including the Head Teacher's Leadership Manual
-              and Master Trainer model in 2023.
-            </p>
-          </article>
+<section
+  class="hero"
+  id="home"
+>
 
-          <article class="lead-card">
-            <div class="lead-number">02</div>
-            <h3>Connecting Policy &amp; Practice</h3>
-            <p>
-              Experience across classroom observation, school implementation,
-              sub-district and district administration and the office of the
-              Director General.
-            </p>
-          </article>
+  <div class="container">
 
-          <article class="lead-card">
-            <div class="lead-number">03</div>
-            <h3>Leading Through Disruption</h3>
-            <p>
-              Contributed to innovative distance-learning responses during COVID-19,
-              helping mobilise teachers and sustain learning opportunities for a
-              large student population.
-            </p>
-          </article>
+```
+<div class="hero-card">
 
-          <article class="lead-card">
-            <div class="lead-number">04</div>
-            <h3>Developing People as Leaders</h3>
-            <p>
-              More than two decades as a trainer, facilitator, Master Trainer and
-              educational leader focused on developing the capacity of teachers,
-              head teachers, education officers and stakeholders.
-            </p>
-          </article>
-        </div>
 
-        <div class="panel" style="margin-top:22px">
-          <h3>COVID-19 Education Response</h3>
-          <p style="margin-top:10px">
-            Supported mobile-phone-based teaching and learning, YouTube video
-            lessons and Zoom-based learning. Contributed to the Digital Primary
-            Education Khulna YouTube initiative, coordinated teacher selection,
-            lesson recording, editing and online dissemination, and supported
-            more than 100 Zoom meetings plus 20 large-scale sessions, some with
-            up to 500 participants. Guidance and motivation reached approximately
-            5,500 teachers supporting distance learning for around 165,000 students.
-          </p>
-        </div>
-      </div>
-    </section>
+  <!-- HERO CONTENT -->
 
-    <!-- EDUCATION -->
-    <section class="section" id="education" style="background:#eef3f7">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">Education</div>
-          <h2>Academic foundations in philosophy, leadership and learning.</h2>
-        </div>
+  <div class="hero-copy">
 
-        <div class="education-grid">
-          <article class="degree">
-            <div class="year">2017</div>
-            <h3>MA Education — Innovation in Learning and Teaching</h3>
-            <p>University of South Wales, United Kingdom</p>
-            <span class="honor">Distinction in Dissertation</span>
-          </article>
+    <div class="eyebrow">
 
-          <article class="degree">
-            <div class="year">2010</div>
-            <h3>MEd — Educational Leadership, Planning and Management</h3>
-            <p>BRAC University, Bangladesh</p>
-            <span class="honor">Vice Chancellor's Medal · Highest CGPA: 3.93/4.00</span>
-          </article>
+      Education Leadership · Systems · Learning
 
-          <article class="degree">
-            <div class="year">2000</div>
-            <h3>MA — Philosophy</h3>
-            <p>University of Dhaka, Bangladesh</p>
-          </article>
-
-          <article class="degree">
-            <div class="year">1997</div>
-            <h3>BA (Honours) — Philosophy</h3>
-            <p>University of Dhaka, Bangladesh</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERNATIONAL -->
-    <section class="section" id="international">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">International &amp; Cross-Cultural Experience</div>
-          <h2>Learning across borders, adapting insight to local systems.</h2>
-          <p class="lead" style="margin-top:12px">
-            International study, professional engagements and comparative
-            education experiences have strengthened an interest in global
-            education leadership and contextual adaptation.
-          </p>
-        </div>
-
-        <div class="experience-list">
-          <div class="mini-card">
-            <strong>World Bank Headquarters · Washington, DC, USA</strong>
-            <span>2025 · LEAP / Better Data for Better Learning engagement</span>
-          </div>
-          <div class="mini-card">
-            <strong>United Kingdom</strong>
-            <span>2016–2017 · Postgraduate study and engagement with education contexts in Wales</span>
-          </div>
-          <div class="mini-card">
-            <strong>CIES · Montreal, Canada</strong>
-            <span>2011 · Presented at the Comparative and International Education Society conference</span>
-          </div>
-          <div class="mini-card">
-            <strong>Beijing, China</strong>
-            <span>2012 · UNDP-supported study visit focused on governance</span>
-          </div>
-          <div class="mini-card">
-            <strong>Broader European Exposure</strong>
-            <span>Canada, France, Belgium, Netherlands, Germany, Switzerland, Austria, Liechtenstein, Italy, Vatican City and Türkiye</span>
-          </div>
-          <div class="mini-card">
-            <strong>Comparative Education Perspective</strong>
-            <span>Interest in international learning and adapting global insights to local system contexts</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL DEVELOPMENT -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <div class="eyebrow">Professional Development</div>
-          <h2>Continuous learning for better implementation.</h2>
-        </div>
-
-        <div class="focus-grid" style="grid-template-columns:repeat(3,1fr)">
-          <div class="focus">Better Data for Better Learning — World Bank</div>
-          <div class="focus">Project Management — NAPD</div>
-          <div class="focus">Basic Procurement — ILO / CPTU</div>
-          <div class="focus">SDGs Implementation at Local Level — BPATC</div>
-          <div class="focus">Master Trainer Training — Primary Curriculum Dissemination</div>
-          <div class="focus">Training of Trainers — Inclusive Education</div>
-          <div class="focus">Training of Trainers — Results-Based Management</div>
-          <div class="focus">Training of Trainers — School Learning Improvement Plan</div>
-          <div class="focus">Monitoring &amp; Supervision of Pre-primary Education</div>
-          <div class="focus">Professional Skill Development — NAPE</div>
-          <div class="focus">Upazila Primary Education Planning — UNICEF / DPE</div>
-          <div class="focus">Digital Content &amp; Online Facilitation</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- INTERESTS -->
-    <section class="section">
-      <div class="container">
-        <div class="interest-wrap">
-          <div class="eyebrow" style="color:#9bd2d0">Leadership Interests</div>
-          <h2>Transforming education systems at scale.</h2>
-          <p class="lead">
-            A long-term commitment to strengthening education systems so that every
-            child can develop, learn and thrive — with particular interest in
-            collective leadership, adaptive system change and building capacity
-            at every level.
-          </p>
-          <div class="interest-tags">
-            <span class="tag">Public Education Systems</span>
-            <span class="tag">Collective Leadership</span>
-            <span class="tag">Adaptive Leadership</span>
-            <span class="tag">System Change</span>
-            <span class="tag">Inclusive Education</span>
-            <span class="tag">Educational Leadership</span>
-            <span class="tag">Policy &amp; Implementation</span>
-            <span class="tag">Digital Learning</span>
-            <span class="tag">Education Technology</span>
-            <span class="tag">Emerging AI for Education</span>
-            <span class="tag">Global Education Leadership</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact" style="padding-top:35px">
-      <div class="container">
-        <div class="contact">
-          <div class="contact-card">
-            <div class="eyebrow">Contact</div>
-            <h2>Let's connect.</h2>
-            <p class="lead" style="margin-top:12px">
-              For professional, academic, education leadership and knowledge-sharing
-              opportunities.
-            </p>
-
-            <ul class="contact-list">
-              <li>
-                <span class="contact-icon">L</span>
-                <div><strong>Location</strong><span>Dhaka, Bangladesh</span></div>
-              </li>
-              <li>
-                <span class="contact-icon">O</span>
-                <div>
-                  <strong>Organisation</strong>
-                  <span>Directorate of Primary Education, Ministry of Primary and Mass Education</span>
-                </div>
-              </li>
-              <li>
-                <span class="contact-icon">G</span>
-                <div>
-                  <strong>Professional Role</strong>
-                  <span>Education Officer &amp; Private Secretary to the Director General</span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div class="quote">
-            <p>
-              “Strengthening education systems by developing people,
-              connecting policy with practice, and learning across contexts.”
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-      <div>© 2026 Md. Abdullah Al Mamun</div>
-      <div>Education Leadership · System Improvement · Professional Learning</div>
     </div>
-  </footer>
+
+
+    <h1>
+
+      Md. Abdullah<br>
+      Al Mamun
+
+    </h1>
+
+
+    <div class="hero-title">
+
+      Education Officer &amp; Private Secretary to the Director General
+
+    </div>
+
+
+    <p class="lead">
+
+      Education professional and system leader with 20+ years of experience
+      across Bangladesh's government primary education system — from frontline
+      school administration to district leadership, national professional
+      development and senior-level strategic coordination.
+
+    </p>
+
+
+    <div class="hero-actions">
+
+      <a
+        class="btn btn-primary"
+        href="#experience"
+      >
+        Explore Experience
+      </a>
+
+
+      <a
+        class="btn btn-light"
+        href="#contact"
+      >
+        Get in Touch
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- HERO PHOTO -->
+
+  <div class="hero-photo">
+
+    <img
+
+      src="mamun.jpg"
+
+      alt="Portrait of Md. Abdullah Al Mamun"
+
+      onerror="this.src='https://placehold.co/700x900/eaf5f6/14213d?text=Add+Profile+Photo';"
+
+    >
+
+
+    <div class="photo-note">
+
+      Education · Leadership · Public Systems
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<!-- STATISTICS -->
+
+<div class="stats">
+
+  <div class="stat">
+
+    <strong>
+      20+
+    </strong>
+
+    <span>
+      Years in education systems
+    </span>
+
+  </div>
+
+
+  <div class="stat">
+
+    <strong>
+      5,500
+    </strong>
+
+    <span>
+      Teachers supported during COVID-19 response
+    </span>
+
+  </div>
+
+
+  <div class="stat">
+
+    <strong>
+      600+
+    </strong>
+
+    <span>
+      School inspections conducted
+    </span>
+
+  </div>
+
+
+  <div class="stat">
+
+    <strong>
+      150
+    </strong>
+
+    <span>
+      Officers trained as Master Trainers / Trainers
+    </span>
+
+  </div>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     PROFILE
+========================================================= -->
+
+<section
+  class="section"
+  id="about"
+>
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+
+    Professional Profile
+
+  </div>
+
+
+  <h2>
+
+    Building stronger education systems through people, practice and leadership.
+
+  </h2>
+
+</div>
+
+
+
+<div class="split">
+
+
+  <article class="panel">
+
+    <h3>
+
+      From classroom realities to system leadership
+
+    </h3>
+
+
+    <p>
+
+      Currently serving as Education Officer and Private Secretary to the
+      Director General of the Directorate of Primary Education, providing
+      professional, strategic and technical support across policy,
+      administration, academic programmes, teacher development, school
+      improvement, stakeholder engagement and system management.
+
+    </p>
+
+
+    <p style="margin-top:16px">
+
+      His experience spans school-level implementation, sub-district and
+      district administration, national professional development and
+      senior strategic coordination — offering a cross-level perspective
+      on how public education systems function.
+
+    </p>
+
+  </article>
+
+
+
+  <article class="panel">
+
+    <h3>
+
+      Core Leadership Expertise
+
+    </h3>
+
+
+    <div class="focus-grid">
+
+
+      <div class="focus">
+        Education System Leadership &amp; Transformation
+      </div>
+
+
+      <div class="focus">
+        Educational Leadership &amp; School Improvement
+      </div>
+
+
+      <div class="focus">
+        Teacher &amp; Head-Teacher Development
+      </div>
+
+
+      <div class="focus">
+        Training &amp; Manual Development
+      </div>
+
+
+      <div class="focus">
+        Master Trainer Development
+      </div>
+
+
+      <div class="focus">
+        Curriculum, Pedagogy &amp; Learning
+      </div>
+
+
+      <div class="focus">
+        Inclusive &amp; Equitable Education
+      </div>
+
+
+      <div class="focus">
+        Education Planning &amp; Management
+      </div>
+
+
+      <div class="focus">
+        Monitoring &amp; Evaluation
+      </div>
+
+
+      <div class="focus">
+        Government &amp; Partner Coordination
+      </div>
+
+
+      <div class="focus">
+        Educational Innovation &amp; Digital Learning
+      </div>
+
+
+      <div class="focus">
+        Facilitation &amp; Knowledge Sharing
+      </div>
+
+
+    </div>
+
+  </article>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     EXPERIENCE
+========================================================= -->
+
+<section
+  class="section"
+  id="experience"
+  style="background:#eef3f7"
+>
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+
+    Professional Experience
+
+  </div>
+
+
+  <h2>
+
+    Two decades across the education system.
+
+  </h2>
+
+
+  <p
+    class="lead"
+    style="margin-top:15px"
+  >
+
+    A career progressing from frontline educational administration to
+    district leadership, national training and senior-level coordination.
+
+  </p>
+
+</div>
+
+
+
+<div class="timeline">
+
+
+  <!-- EXPERIENCE 1 -->
+
+  <div class="experience">
+
+    <span class="dot"></span>
+
+
+    <article class="experience-card">
+
+
+      <div class="role-line">
+
+
+        <div>
+
+          <div class="role">
+
+            Education Officer &amp; Private Secretary to the Director General
+
+          </div>
+
+
+          <div class="org">
+
+            Directorate of Primary Education · Ministry of Primary and Mass Education
+
+          </div>
+
+        </div>
+
+
+        <span class="date">
+
+          Feb 2025 – Present
+
+        </span>
+
+
+      </div>
+
+
+      <p>
+
+        Dhaka, Bangladesh · Professional, strategic and technical support to senior leadership.
+
+      </p>
+
+
+      <ul class="impact-list">
+
+        <li>
+          Prepare briefing notes, speeches, presentations, concept notes, reports and strategic communications.
+        </li>
+
+        <li>
+          Support academic programmes, teacher development, school improvement, education management and implementation priorities.
+        </li>
+
+        <li>
+          Coordinate with senior government officials, field leadership, development partners and international organisations.
+        </li>
+
+        <li>
+          Participate in field and school visits, monitoring activities and follow-up on implementation issues.
+        </li>
+
+      </ul>
+
+
+    </article>
+
+  </div>
+
+
+
+  <!-- EXPERIENCE 2 -->
+
+  <div class="experience">
+
+    <span class="dot"></span>
+
+
+    <article class="experience-card">
+
+
+      <div class="role-line">
+
+
+        <div>
+
+          <div class="role">
+
+            Education Officer — Training Division
+
+          </div>
+
+
+          <div class="org">
+
+            Directorate of Primary Education
+
+          </div>
+
+        </div>
+
+
+        <span class="date">
+
+          Apr 2022 – Feb 2025
+
+        </span>
+
+
+      </div>
+
+
+      <p>
+
+        National teacher and education-officer professional development,
+        leadership development, training design and facilitation.
+
+      </p>
+
+
+      <ul class="impact-list">
+
+        <li>
+          Member of a six-person design and development team for the Head Teacher Leadership Development Programme.
+        </li>
+
+        <li>
+          Co-developed a 14-day Head Teacher's Leadership Training Manual comprising 56 structured sessions.
+        </li>
+
+        <li>
+          Trained 150 selected officers across Bangladesh as Master Trainers / Trainers.
+        </li>
+
+        <li>
+          Supported a cascade model for scaling leadership capacity among head teachers.
+        </li>
+
+      </ul>
+
+
+    </article>
+
+  </div>
+
+
+
+  <!-- EXPERIENCE 3 -->
+
+  <div class="experience">
+
+    <span class="dot"></span>
+
+
+    <article class="experience-card">
+
+
+      <div class="role-line">
+
+
+        <div>
+
+          <div class="role">
+
+            Assistant District Primary Education Officer
+
+          </div>
+
+
+          <div class="org">
+
+            Government Primary Education · Bangladesh
+
+          </div>
+
+        </div>
+
+
+        <span class="date">
+
+          Mar 2019 – Apr 2022
+
+        </span>
+
+
+      </div>
+
+
+      <p>
+
+        Educational, administrative and leadership support across a large district primary education system.
+
+      </p>
+
+
+      <ul class="impact-list">
+
+        <li>
+          Supported a system comprising approximately 1,159 schools, 6,941 teachers and 165,000 students.
+        </li>
+
+        <li>
+          Led and mentored Upazila and Assistant Upazila Education Officers.
+        </li>
+
+        <li>
+          Supported classroom observation, teacher development, school inspection and instructional improvement.
+        </li>
+
+        <li>
+          Worked with schools and field officials to strengthen School Learning Improvement Plans and local education management.
+        </li>
+
+      </ul>
+
+
+    </article>
+
+  </div>
+
+
+
+  <!-- EXPERIENCE 4 -->
+
+  <div class="experience">
+
+    <span class="dot"></span>
+
+
+    <article class="experience-card">
+
+
+      <div class="role-line">
+
+
+        <div>
+
+          <div class="role">
+
+            Upazila Education Officer
+
+          </div>
+
+
+          <div class="org">
+
+            Government Primary Education · Bangladesh
+
+          </div>
+
+        </div>
+
+
+        <span class="date">
+
+          Jan 2005 – Feb 2019
+
+        </span>
+
+
+      </div>
+
+
+      <p>
+
+        Chief education administrator and academic leader at sub-district level across multiple postings.
+
+      </p>
+
+
+      <ul class="impact-list">
+
+        <li>
+          Led administration, school supervision, teacher support and programme implementation.
+        </li>
+
+        <li>
+          Conducted 600+ school inspections and observed 800+ classroom lessons.
+        </li>
+
+        <li>
+          Organised 50+ teacher training programmes and supported 500+ sub-cluster training sessions.
+        </li>
+
+        <li>
+          Supervised professional learning involving approximately 2,500 teachers.
+        </li>
+
+        <li>
+          Chaired or facilitated 110+ Primary Education Development and Coordination Meetings.
+        </li>
+
+        <li>
+          Supported improvements in enrolment, attendance and retention; in relevant postings, dropout fell from approximately 25% to below 5%.
+        </li>
+
+      </ul>
+
+
+    </article>
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     LEADERSHIP
+========================================================= -->
+
+<section
+  class="section"
+  id="leadership"
+>
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+
+    Selected System-Level Contributions
+
+  </div>
+
+
+  <h2>
+
+    Leadership that connects policy, practice and people.
+
+  </h2>
+
+</div>
+
+
+
+<div class="leadership-grid">
+
+
+  <article class="lead-card">
+
+    <div class="lead-number">
+      01
+    </div>
+
+    <h3>
+      Building Leadership Capacity at Scale
+    </h3>
+
+    <p>
+
+      Designed and delivered leadership development for head teachers and
+      education officers, including the Head Teacher's Leadership Manual
+      and Master Trainer model in 2023.
+
+    </p>
+
+  </article>
+
+
+
+  <article class="lead-card">
+
+    <div class="lead-number">
+      02
+    </div>
+
+    <h3>
+      Connecting Policy &amp; Practice
+    </h3>
+
+    <p>
+
+      Experience across classroom observation, school implementation,
+      sub-district and district administration and the office of the
+      Director General.
+
+    </p>
+
+  </article>
+
+
+
+  <article class="lead-card">
+
+    <div class="lead-number">
+      03
+    </div>
+
+    <h3>
+      Leading Through Disruption
+    </h3>
+
+    <p>
+
+      Contributed to innovative distance-learning responses during COVID-19,
+      helping mobilise teachers and sustain learning opportunities for a
+      large student population.
+
+    </p>
+
+  </article>
+
+
+
+  <article class="lead-card">
+
+    <div class="lead-number">
+      04
+    </div>
+
+    <h3>
+      Developing People as Leaders
+    </h3>
+
+    <p>
+
+      More than two decades as a trainer, facilitator, Master Trainer and
+      educational leader focused on developing the capacity of teachers,
+      head teachers, education officers and stakeholders.
+
+    </p>
+
+  </article>
+
+
+</div>
+
+
+
+<div
+  class="panel"
+  style="margin-top:24px"
+>
+
+  <h3>
+    COVID-19 Education Response
+  </h3>
+
+
+  <p style="margin-top:12px">
+
+    Supported mobile-phone-based teaching and learning, YouTube video
+    lessons and Zoom-based learning. Contributed to the Digital Primary
+    Education Khulna YouTube initiative, coordinated teacher selection,
+    lesson recording, editing and online dissemination, and supported
+    more than 100 Zoom meetings plus 20 large-scale sessions, some with
+    up to 500 participants. Guidance and motivation reached approximately
+    5,500 teachers supporting distance learning for around 165,000 students.
+
+  </p>
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     EDUCATION
+========================================================= -->
+
+<section
+  class="section"
+  id="education"
+  style="background:#eef3f7"
+>
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+    Education
+  </div>
+
+
+  <h2>
+
+    Academic foundations in philosophy, leadership and learning.
+
+  </h2>
+
+</div>
+
+
+
+<div class="education-grid">
+
+
+  <article class="degree">
+
+    <div class="year">
+      2017
+    </div>
+
+    <h3>
+
+      MA Education — Innovation in Learning and Teaching
+
+    </h3>
+
+    <p>
+
+      University of South Wales, United Kingdom
+
+    </p>
+
+    <span class="honor">
+
+      Distinction in Dissertation
+
+    </span>
+
+  </article>
+
+
+
+  <article class="degree">
+
+    <div class="year">
+      2010
+    </div>
+
+    <h3>
+
+      MEd — Educational Leadership, Planning and Management
+
+    </h3>
+
+    <p>
+
+      BRAC University, Bangladesh
+
+    </p>
+
+    <span class="honor">
+
+      Vice Chancellor's Medal · Highest CGPA: 3.93/4.00
+
+    </span>
+
+  </article>
+
+
+
+  <article class="degree">
+
+    <div class="year">
+      2000
+    </div>
+
+    <h3>
+
+      MA — Philosophy
+
+    </h3>
+
+    <p>
+
+      University of Dhaka, Bangladesh
+
+    </p>
+
+  </article>
+
+
+
+  <article class="degree">
+
+    <div class="year">
+      1997
+    </div>
+
+    <h3>
+
+      BA (Honours) — Philosophy
+
+    </h3>
+
+    <p>
+
+      University of Dhaka, Bangladesh
+
+    </p>
+
+  </article>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     INTERNATIONAL EXPERIENCE
+========================================================= -->
+
+<section
+  class="section"
+  id="international"
+>
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+
+    International &amp; Cross-Cultural Experience
+
+  </div>
+
+
+  <h2>
+
+    Learning across borders, adapting insight to local systems.
+
+  </h2>
+
+
+  <p
+    class="lead"
+    style="margin-top:15px"
+  >
+
+    International study, professional engagements and comparative
+    education experiences have strengthened an interest in global
+    education leadership and contextual adaptation.
+
+  </p>
+
+</div>
+
+
+
+<div class="experience-list">
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      World Bank Headquarters · Washington, DC, USA
+
+    </strong>
+
+    <span>
+
+      2025 · LEAP / Better Data for Better Learning engagement
+
+    </span>
+
+  </div>
+
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      United Kingdom
+
+    </strong>
+
+    <span>
+
+      2016–2017 · Postgraduate study and engagement with education contexts in Wales
+
+    </span>
+
+  </div>
+
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      CIES · Montreal, Canada
+
+    </strong>
+
+    <span>
+
+      2011 · Presented at the Comparative and International Education Society conference
+
+    </span>
+
+  </div>
+
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      Beijing, China
+
+    </strong>
+
+    <span>
+
+      2012 · UNDP-supported study visit focused on governance
+
+    </span>
+
+  </div>
+
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      Broader European Exposure
+
+    </strong>
+
+    <span>
+
+      Canada, France, Belgium, Netherlands, Germany, Switzerland,
+      Austria, Liechtenstein, Italy, Vatican City and Türkiye
+
+    </span>
+
+  </div>
+
+
+
+  <div class="mini-card">
+
+    <strong>
+
+      Comparative Education Perspective
+
+    </strong>
+
+    <span>
+
+      Interest in international learning and adapting global insights
+      to local system contexts
+
+    </span>
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     PROFESSIONAL DEVELOPMENT
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+```
+<div class="section-head">
+
+  <div class="eyebrow">
+
+    Professional Development
+
+  </div>
+
+
+  <h2>
+
+    Continuous learning for better implementation.
+
+  </h2>
+
+</div>
+
+
+
+<div
+  class="focus-grid"
+  style="grid-template-columns:repeat(3,1fr)"
+>
+
+
+  <div class="focus">
+
+    Better Data for Better Learning — World Bank
+
+  </div>
+
+
+  <div class="focus">
+
+    Project Management — NAPD
+
+  </div>
+
+
+  <div class="focus">
+
+    Basic Procurement — ILO / CPTU
+
+  </div>
+
+
+  <div class="focus">
+
+    SDGs Implementation at Local Level — BPATC
+
+  </div>
+
+
+  <div class="focus">
+
+    Master Trainer Training — Primary Curriculum Dissemination
+
+  </div>
+
+
+  <div class="focus">
+
+    Training of Trainers — Inclusive Education
+
+  </div>
+
+
+  <div class="focus">
+
+    Training of Trainers — Results-Based Management
+
+  </div>
+
+
+  <div class="focus">
+
+    Training of Trainers — School Learning Improvement Plan
+
+  </div>
+
+
+  <div class="focus">
+
+    Monitoring &amp; Supervision of Pre-primary Education
+
+  </div>
+
+
+  <div class="focus">
+
+    Professional Skill Development — NAPE
+
+  </div>
+
+
+  <div class="focus">
+
+    Upazila Primary Education Planning — UNICEF / DPE
+
+  </div>
+
+
+  <div class="focus">
+
+    Digital Content &amp; Online Facilitation
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     LEADERSHIP INTERESTS
+========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+```
+<div class="interest-wrap">
+
+
+  <div
+    class="eyebrow"
+    style="color:#9bd2d0"
+  >
+
+    Leadership Interests
+
+  </div>
+
+
+  <h2>
+
+    Transforming education systems at scale.
+
+  </h2>
+
+
+  <p class="lead">
+
+    A long-term commitment to strengthening education systems so that every
+    child can develop, learn and thrive — with particular interest in
+    collective leadership, adaptive system change and building capacity
+    at every level.
+
+  </p>
+
+
+
+  <div class="interest-tags">
+
+
+    <span class="tag">
+      Public Education Systems
+    </span>
+
+
+    <span class="tag">
+      Collective Leadership
+    </span>
+
+
+    <span class="tag">
+      Adaptive Leadership
+    </span>
+
+
+    <span class="tag">
+      System Change
+    </span>
+
+
+    <span class="tag">
+      Inclusive Education
+    </span>
+
+
+    <span class="tag">
+      Educational Leadership
+    </span>
+
+
+    <span class="tag">
+      Policy &amp; Implementation
+    </span>
+
+
+    <span class="tag">
+      Digital Learning
+    </span>
+
+
+    <span class="tag">
+      Education Technology
+    </span>
+
+
+    <span class="tag">
+      Emerging AI for Education
+    </span>
+
+
+    <span class="tag">
+      Global Education Leadership
+    </span>
+
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section
+  class="section"
+  id="contact"
+  style="padding-top:40px"
+>
+
+  <div class="container">
+
+```
+<div class="contact">
+
+
+  <!-- CONTACT DETAILS -->
+
+  <div class="contact-card">
+
+
+    <div class="eyebrow">
+
+      Contact
+
+    </div>
+
+
+    <h2>
+
+      Let's connect.
+
+    </h2>
+
+
+    <p
+      class="lead"
+      style="margin-top:15px"
+    >
+
+      For professional, academic, education leadership and knowledge-sharing
+      opportunities.
+
+    </p>
+
+
+
+    <ul class="contact-list">
+
+
+      <li>
+
+        <span class="contact-icon">
+          L
+        </span>
+
+        <div>
+
+          <strong>
+            Location
+          </strong>
+
+          <span>
+            Dhaka, Bangladesh
+          </span>
+
+        </div>
+
+      </li>
+
+
+
+      <li>
+
+        <span class="contact-icon">
+          O
+        </span>
+
+        <div>
+
+          <strong>
+            Organisation
+          </strong>
+
+          <span>
+
+            Directorate of Primary Education,
+            Ministry of Primary and Mass Education
+
+          </span>
+
+        </div>
+
+      </li>
+
+
+
+      <li>
+
+        <span class="contact-icon">
+          G
+        </span>
+
+        <div>
+
+          <strong>
+            Professional Role
+          </strong>
+
+          <span>
+
+            Education Officer &amp;
+            Private Secretary to the Director General
+
+          </span>
+
+        </div>
+
+      </li>
+
+
+    </ul>
+
+
+  </div>
+
+
+
+  <!-- QUOTE -->
+
+  <div class="quote">
+
+    <p>
+
+      “Strengthening education systems by developing people,
+      connecting policy with practice, and learning across contexts.”
+
+    </p>
+
+  </div>
+
+
+</div>
+```
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+  <div class="footer-inner">
+
+```
+<div>
+
+  © 2026 Md. Abdullah Al Mamun
+
+</div>
+
+
+<div>
+
+  Education Leadership · System Improvement · Professional Learning
+
+</div>
+```
+
+  </div>
+
+</footer>
 
 </body>
 </html>
